@@ -1,0 +1,10 @@
+
+html, body {
+    height: 100%;
+    max-height: 100%;
+    background-image:url("../resources/bg_image.jpg")
+}
+.top-container{
+    padding-top: 10%;
+
+}
