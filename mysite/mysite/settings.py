@@ -36,6 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'landing',
+    'orders',
+    'products',
 ]
 
 MIDDLEWARE = [
@@ -118,3 +120,4 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
     'mysite/landing/static',
 ]
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images/upload')
