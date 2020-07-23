@@ -6,10 +6,80 @@
 <div class="section-top">
     <img src="{% static 'resources/slider0.jpg'  %}" class="img-responsive">
 </div>
-<div class="section">
+<div class="section section1">
     <div class="container">
         <div class="row">
             {% for product_image in products_images %}
+            <div class="col-lg-3">
+                <div>
+
+                </div>
+                <div class="product-item">
+                    <div>
+                        <img src="{{product_image.image.url}}" class="img-phones img-responsive ">
+                    </div>
+                    <h4>{{product_image.product.name}}</h4>
+                    <p>
+                        {{product_image.product.description|truncatechars_html:50}}}
+                    </p>
+                    <div class="product-price">
+                        {{product_image.product.price}} $
+
+                    </div>
+                    <div class="add-to-card-btn">
+                        <button class="btn btn-success">
+                            Добавить в корзину
+                        </button>
+
+                    </div>
+                </div>
+
+
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+<div class="section section2 phones-container">
+    <div class="container">
+        <div class="row">
+            {% for product_image in products_images_phones %}
+            <div class="col-lg-3">
+                <div>
+
+                </div>
+                <div class="product-item">
+                    <div>
+                        <img src="{{product_image.image.url}}" class="img-phones img-responsive ">
+                    </div>
+                    <h4>{{product_image.product.name}}</h4>
+                    <p>
+                        {{product_image.product.description|truncatechars_html:50}}}
+                    </p>
+                    <div class="product-price">
+                        {{product_image.product.price}} $
+
+                    </div>
+                    <div class="add-to-card-btn">
+                        <button class="btn btn-success">
+                            Добавить в корзину
+                        </button>
+
+                    </div>
+                </div>
+
+
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+<div class="section section3 laptops-container">
+    <div class="container">
+        <div class="row">
+            {% for product_image in products_images_laptops %}
             <div class="col-lg-3">
                 <div>
 
