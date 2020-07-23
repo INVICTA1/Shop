@@ -5,8 +5,7 @@ html, body {
     font-family: 'Roboto', sans-serif;
     background-color: #edeef0;
 }
-
-.product-item {
+.product-item{
     height: 400px;
     background-color: white;
     position: relative;
@@ -16,42 +15,20 @@ html, body {
 
 }
 
-.section-top {
+.section-top{
     margin-bottom: 20px;
 }
-
-.add-to-card-btn {
-    position: absolute;
+.add-to-card-btn{
+        position: absolute;
     bottom: 15px;
     left: 0;
     right: 0;
     margin: auto;
 
 }
-
-.img-phones {
+.img-phones{
     left: 0;
     right: 0;
     margin: auto;
-    height: 180px;
 
-}
-
-.discount-container {
-    position: absolute;
-    top: 6%;
-    background: #55e073;
-    width: 25%;
-    color: white;
-    font-weight: 700;
-    padding: 3px;
-}
-
-.product-price {
-    position: absolute;
-    bottom: 55px;
-    right: 0;
-
-    left: 0;
-    margin: auto;
 }
