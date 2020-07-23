@@ -6,13 +6,8 @@ __pycache__/
 # C extensions
 *.so
 
-<<<<<<< HEAD
 .idea
-*.idea
 .idea/
-*.idea/
-=======
->>>>>>> parent of cd23e34... discount
 # Distribution / packaging
 .Python
 env/
