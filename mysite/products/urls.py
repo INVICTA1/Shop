@@ -1,7 +1,8 @@
+from django.conf.urls import url, include
 from django.contrib import admin
-from django.urls import path, include
-from django.conf.urls import url
+from . import views
 
 urlpatterns = [
-
+    # url(r'^landing123/', views.landing, name='landing'),
+    url(r'^product/(?P<product_id>\w+)/$', views.product, name='product'),
 ]
