@@ -1,6 +1,8 @@
 from django.db import models
 from django.db.models.signals import post_save
 from products.models import Product
+from django.contrib.auth.models import User
+
 
 # from utils.main import disable_for_loaddata
 
@@ -19,6 +21,7 @@ class Status(models.Model):
 
 
 class Order(models.Model):
+    user = models.ForeignKey(User, blank=True, null=True, default=None,on_delete=models.CASCADE)
     total_price = models.DecimalField(max_digits=10, decimal_places=2,
                                       default=0)  # total price for all products in order
     customer_name = models.CharField(max_length=100, blank=True, null=True, default=None)
