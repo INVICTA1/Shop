@@ -20,9 +20,9 @@
 
         </div>
         <div class="add-to-card-btn">
-            <button class="btn btn-success">
-                Добавить в корзину
-            </button>
+            <a class="btn btn-success" href="{% url 'product' product_image.product.id %}">
+                Купить
+            </a>
 
         </div>
     </div>
